@@ -35,7 +35,7 @@ function display(){
         
          table1=document.getElementById("temptable")
          table1.append(table)
-         request.send();
+       
          
         }
 }
