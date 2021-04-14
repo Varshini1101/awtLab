@@ -2,10 +2,10 @@ function display(){
     var request=new XMLHttpRequest()
     const city=document.getElementById("city").value;
     
-    const url= `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=c15fea71f4c249cd6c1594288285fe69`
+    const url= `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=c15fea71f4c249cd6c1594288285fe69`
     console.log(url)
     request.open('GET',url,true);
-    request.send()
+    request.send();
     request.onload=function(){
                  var result=JSON.parse(this.response)
                  let table=document.createElement("TABLE");
